@@ -14,8 +14,4 @@ RUN mix do deps.get, deps.compile
 
 COPY . .
 
-RUN mix ecto.create
-
-RUN mix ecto.migrate
-
 CMD ["mix", "phx.server"]
